@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    background-color: tan;
+}
+
+.site-wrap {
+    display: grid;
+    grid-template-rows: 4;
+    grid-template-columns: 3;
+    grid-template-areas:
+        'alfred logo create'
+        '. logo .'
+        'chinese btn reflection'
+        'chinese . reflection';
+}
+
+.btn-wrapper {
+    grid-area: btn;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-wrapper > .btn {
+    text-decoration: none;
+    border: 2px solid #7124ee;
+    border-radius: .9em;
+    color: white;
+    background-color: black;
+    padding: 19.5px 34px;
+    text-transform: uppercase;
+}
+
+.btn-wrapper a:hover {
+    background-color: #7124ee;
+    border: 2px solid black;
+    color: tan;
+}
+
+.logo-wrapper > .logo {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    grid-area: logo;
+}
+
+/* Image Styles */
+
+.alfred {
+    grid-area: alfred;
+    margin-top: 25px;
+}
+
+.create {
+    grid-area: create;
+    margin-top: 25px;
+}
+
+.chinese {
+    grid-area: chinese;
+}
+
+.reflection {
+    grid-area: reflection;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 666px) {
+    
+}
