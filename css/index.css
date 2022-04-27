@@ -1,3 +1,5 @@
+/* Body Styles */
+
 body {
     margin: 0;
     padding: 0;
@@ -6,16 +8,22 @@ body {
     background-color: tan;
 }
 
+/* Site Wrap Styles*/
+
 .site-wrap {
     display: grid;
-    grid-template-rows: 4;
-    grid-template-columns: 3;
+    grid-template-rows: 5;
+    grid-template-columns: 1;
     grid-template-areas:
-        'alfred logo create'
-        '. logo .'
-        'chinese btn reflection'
-        'chinese . reflection';
+        'logo'
+        'alfred'
+        'btn'
+        'chinese'
+        'reflection'
+        'create';
 }
+
+/* Button Styles */
 
 .btn-wrapper {
     grid-area: btn;
@@ -26,7 +34,7 @@ body {
 .btn-wrapper > .btn {
     text-decoration: none;
     border: 2px solid #7124ee;
-    border-radius: .9em;
+    border-radius: 50em;
     color: white;
     background-color: black;
     padding: 19.5px 34px;
@@ -35,39 +43,69 @@ body {
 
 .btn-wrapper a:hover {
     background-color: #7124ee;
-    border: 2px solid black;
     color: tan;
+    box-shadow: 9px 10px rgba(0,0,0,0.6);
+    transition: all 0.33s ease-in;
+}
+
+/* Logo Styles */
+
+.logo-wrapper {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
 }
 
 .logo-wrapper > .logo {
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    grid-area: logo;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 /* Image Styles */
 
 .alfred {
     grid-area: alfred;
+    display: flex;
+    justify-content: center;
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .create {
     grid-area: create;
+    display: flex;
+    justify-content: center;
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .chinese {
     grid-area: chinese;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .reflection {
     grid-area: reflection;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 /* Media Query */
 
-@media only screen and (max-width: 666px) {
-    
+@media only screen and (min-width: 666px) {
+    .site-wrap {
+        display: grid;
+        grid-template-rows: 4;
+        grid-template-columns: 3;
+        grid-template-areas: 
+        'alfred logo chinese'
+        '. logo .'
+        'reflection btn create'
+        'reflection . create';
+    }
 }
