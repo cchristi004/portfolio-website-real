@@ -17,8 +17,8 @@ body {
     grid-template-areas:
         'logo'
         'alfred'
-        'btn'
         'chinese'
+        'btn'
         'reflection'
         'create';
 }

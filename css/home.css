@@ -6,22 +6,6 @@ body {
     background-color: tan;
 }
 
-.site-wrap {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1;
-    grid-gap: 10px;
-    grid-template-rows: 7;
-    grid-template-areas:
-        'nav'
-        'featured-main'
-        'profile-pic'
-        'oh-gee-art-2'
-        'smokin'
-        'expand'
-        'footer';
-}
-
 /* Nav Styles */
 
 .nav {
@@ -36,6 +20,7 @@ body {
 .nav > ul li {
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Nav Links Styles */
@@ -108,36 +93,27 @@ body {
 
 /* Profile Pic Styles */
 
-.featured-profile {
-    grid-area: profile-pic;
-}
-
-.featured-profile > img {
-    border: 4px solid #7124ee;
-}
-
-/* Content Styles */
-
-.content {
-    background-color: black;
-    border: 4px solid #7124ee;
-    grid-area: content;
+.profile-pic {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.profile-pic > img {
+    border: 4px solid #7124ee;
 }
 
 /* Drawing Styles */
 
-.oh-gee-art-2 {
-    grid-area: oh-gee-art-2;
+.drawings {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: inline;
 }
 
-.smokin {
-    grid-area: smokin;
-}
-
-.expand {
-    grid-area: expand;
+.drawings > img {
+    text-align: center;
 }
 
 /* Footer Styles */
