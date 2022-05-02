@@ -56,9 +56,17 @@ body {
     justify-content: center;
 }
 
-.logo-wrapper > .logo {
+.logo-wrapper > img {
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+.logo-wrapper > a > .active {
+    background-color: #7124ee;
+    color: tan;
+    box-shadow: 9px 10px rgba(0,0,0,0.6);
+    transition: all 0.33s ease-in;
+    border-radius: 50em;
 }
 
 /* Image Styles */

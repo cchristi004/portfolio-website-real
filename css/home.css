@@ -38,7 +38,7 @@ body {
     display: inline-block;
 }
 
-/* Nav Links Hover Conditional */
+/* Nav Hover Conditional */
 
 .nav > ul a:hover, .nav .active {
     background-color: #7124ee;
@@ -47,26 +47,30 @@ body {
     transition: all 0.33s ease-in;
 }
 
-/* Featured Main Styles */
+/* About Me Styles */
 
-.featured-main {
+.about-me {
     background-color: black;
     border: 4px solid #7124ee;
     grid-area: featured-main;
 }
 
-.featured-main h1 {
+.about-me h1 {
     font-weight: bold;
     text-align: center;
     color: tan;
 }
 
-.featured-main p {
+.about-me p {
     padding: 10px;
     padding-left: 15px;
     color: tan;
     font-size: 23px;
     text-align: center;
+}
+
+.about-me a {
+    display: flex;
 }
 
 /* Button Styles */
@@ -112,10 +116,6 @@ body {
     display: inline;
 }
 
-.drawings > img {
-    text-align: center;
-}
-
 /* Footer Styles */
 
 .footer {
@@ -127,8 +127,8 @@ body {
     border-top: 4px solid #7124ee;
 }
 
-.footer > p {
-    vertical-align: middle;
+.footer {
+    padding-bottom: 10px;
 }
 
 /* Media Query */
