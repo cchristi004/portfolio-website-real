@@ -113,7 +113,29 @@ body {
 .drawings {
     margin-top: 25px;
     margin-bottom: 25px;
-    display: inline;
+}
+
+.drawings > .oh-gee-art-2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.drawings > .smokin {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.drawings > .expand {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.drawings > .open-yo-mind {
+    display: flex;
+    justify-content: center;
 }
 
 /* Footer Styles */
@@ -125,10 +147,6 @@ body {
     padding-top: 2em;
     color: white;
     border-top: 4px solid #7124ee;
-}
-
-.footer {
-    padding-bottom: 10px;
 }
 
 /* Media Query */
