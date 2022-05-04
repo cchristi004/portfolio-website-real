@@ -47,68 +47,41 @@ body {
     transition: all 0.33s ease-in;
 }
 
-/* About Me Styles */
+/* Contact Me Styles */
 
-.about-me {
-    background-color: black;
-    border: 4px solid #7124ee;
-    grid-area: featured-main;
-}
-
-.about-me h1 {
-    font-weight: bold;
-    text-align: center;
-    color: tan;
-}
-
-.about-me p {
-    padding: 10px;
-    padding-left: 15px;
-    color: tan;
-    font-size: 23px;
-    text-align: center;
-}
-
-/* Button Styles */
-
-.more-btn {
-    text-decoration: none;
-    border: 2px solid tan;
-    border-radius: 5px;
-    color: black;
-    font-weight: bold;
-    background-color: white;
-    padding: 19.5px 34px;
-    margin: 10px 10px;
-    text-align: center;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-around;
-}
-
-.featured-main a:hover {
-    box-shadow: 5px 5px rgba(196, 184, 84, 0.904) inset, -5px -5px rgba(196, 184, 84, 0.904) inset;
-    transition: all 0.5s ease-in;
-}
-
-/* Profile Pic Styles */
-
-.profile-pic {
+.contact-me > h1 {
+    margin-top: 50px;
     display: flex;
     justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
 }
 
-.profile-pic > img {
-    border: 4px solid #7124ee;
+/* Form Styles */
+
+.form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-/* Drawing Styles */
+.form > form {
+    width: 70%;
+}
 
-.drawings {
-    margin-top: 25px;
-    margin-bottom: 25px;
+.form > form > input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #7124ee;
+    background-color: white;
+    color: black;
+}
+
+.form > form > input[type="submit"] {
+    width: 40%;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: #7124ee;
 }
 
 /* Footer Styles */
