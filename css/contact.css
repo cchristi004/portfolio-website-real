@@ -77,11 +77,23 @@ body {
     color: black;
 }
 
-.form > form > input[type="submit"] {
+.form > form > input[id="msg"] {
+    padding-bottom: 70px;
+}
+
+.form > form > .submit > input[type="submit"] {
     width: 40%;
     padding: 10px;
     border: 2px solid black;
     background-color: #7124ee;
+    color: tan;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.form > form > .submit {
+    display: flex;
+    justify-content: center;
 }
 
 /* Footer Styles */
@@ -118,18 +130,22 @@ body {
             "footer footer footer footer footer footer"
         ;
     }
+
     .featured-profile {
         display: none;
     }
+
     .header > .nav {
         list-style: none;  
         padding: 0;
         display: flex;
         flex-direction: column;
     }
+
     .header > .nav a {
         margin: 0.5em;
     }
+
     .featured-header {
         text-align: center;
         line-height: 1em;

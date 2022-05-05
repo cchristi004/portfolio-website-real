@@ -47,68 +47,25 @@ body {
     transition: all 0.33s ease-in;
 }
 
-/* About Me Styles */
+/* Content Styles */
 
-.about-me {
-    background-color: black;
-    border: 4px solid #7124ee;
-    grid-area: featured-main;
-}
-
-.about-me h1 {
-    font-weight: bold;
-    text-align: center;
-    color: tan;
-}
-
-.about-me p {
-    padding: 10px;
-    padding-left: 15px;
-    color: tan;
-    font-size: 23px;
-    text-align: center;
-}
-
-/* Button Styles */
-
-.more-btn {
-    text-decoration: none;
-    border: 2px solid tan;
-    border-radius: 5px;
-    color: black;
-    font-weight: bold;
-    background-color: white;
-    padding: 19.5px 34px;
-    margin: 10px 10px;
-    text-align: center;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-around;
-}
-
-.featured-main a:hover {
-    box-shadow: 5px 5px rgba(196, 184, 84, 0.904) inset, -5px -5px rgba(196, 184, 84, 0.904) inset;
-    transition: all 0.5s ease-in;
-}
-
-/* Profile Pic Styles */
-
-.profile-pic {
+.content {
+    margin: 25px 50px;
     display: flex;
     justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-.profile-pic > img {
+    background-color: black;
     border: 4px solid #7124ee;
+    height: 400px;
 }
 
-/* Drawing Styles */
+.content > .header > h2 {
+    color: white;
+    text-align: center;
+}
 
-.drawings {
-    margin-top: 25px;
-    margin-bottom: 25px;
+.content > .info > p {
+    color: tan;
+    text-align: center;
 }
 
 /* Footer Styles */
@@ -120,9 +77,6 @@ body {
     padding-top: 2em;
     color: white;
     border-top: 4px solid #7124ee;
-}
-
-.footer {
     padding-bottom: 10px;
 }
 

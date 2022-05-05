@@ -53,15 +53,17 @@ body {
     background-color: black;
     border: 4px solid #7124ee;
     grid-area: featured-main;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
-.about-me h1 {
+.about-me > h1 {
     font-weight: bold;
     text-align: center;
     color: tan;
 }
 
-.about-me p {
+.about-me > p {
     padding: 10px;
     padding-left: 15px;
     color: tan;
@@ -69,30 +71,33 @@ body {
     text-align: center;
 }
 
-.about-me a {
+.about-me > .btn-position {
     display: flex;
+    justify-content: center;
 }
 
-/* Button Styles */
+.about-me > .btn-position > a:hover {
+    box-shadow: 5px 5px tan inset, -5px -5px tan inset;
+    transition: all 0.5s ease-in;
+    background-color: tan;
+    border: 2px solid #7124ee;
+    color: #7124ee;
+}
 
-.more-btn {
+.about-me > .btn-position > .more-btn {
     text-decoration: none;
     border: 2px solid tan;
     border-radius: 5px;
     color: black;
     font-weight: bold;
     background-color: white;
-    padding: 19.5px 34px;
-    margin: 10px 10px;
+    padding: 15px 24px;
+    margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
     display: flex;
     justify-content: space-around;
-}
-
-.featured-main a:hover {
-    box-shadow: 5px 5px rgba(196, 184, 84, 0.904) inset, -5px -5px rgba(196, 184, 84, 0.904) inset;
-    transition: all 0.5s ease-in;
+    font-size: 20px;
 }
 
 /* Profile Pic Styles */
@@ -111,8 +116,11 @@ body {
 /* Drawing Styles */
 
 .drawings {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 25px;
+    background-color: black;
+    border: 4px solid #7124ee;
 }
 
 .drawings > .oh-gee-art-2 {
