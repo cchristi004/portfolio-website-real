@@ -50,8 +50,10 @@ body {
 /* Illustrator Styles*/
 
 .illustrator {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px;
+    background-color: black;
+    border: 4px solid #7124ee;
+    padding-top: 25px;
 }
 
 .illustrator > .illustrator-logo {
@@ -59,14 +61,10 @@ body {
     justify-content: center;
 }
 
-.illustrator > h3 {
+.illustrator > h3, h4 {
     display: flex;
     justify-content: center;
-}
-
-.illustrator > h4 {
-    display: flex;
-    justify-content: center;
+    color: white;
 }
 
 .illustrator > p {
@@ -77,7 +75,10 @@ body {
 /* Photoshop Styles*/
 
 .photoshop {
-    margin-bottom: 50px;
+    margin: 50px;
+    background-color: black;
+    border: 4px solid #7124ee;
+    padding-top: 25px;
 }
 
 .photoshop > .photoshop-logo {
@@ -85,14 +86,10 @@ body {
     justify-content: center;
 }
 
-.photoshop > h3 {
+.photoshop > h3, h4 {
     display: flex;
     justify-content: center;
-}
-
-.photoshop > h4 {
-    display: flex;
-    justify-content: center;
+    color: white;
 }
 
 .photoshop > p {
@@ -103,7 +100,10 @@ body {
 /* CSS & HTML Styles */
 
 .html-css {
-    margin-bottom: 50px;
+    margin: 50px;
+    background-color: black;
+    border: 4px solid #7124ee;
+    padding-top: 25px;
 }
 
 .html-css > .html-css-logos {
@@ -111,14 +111,10 @@ body {
     justify-content: center;
 }
 
-.html-css > h3 {
+.html-css > h3, h4 {
     display: flex;
     justify-content: center;
-}
-
-.html-css > h4 {
-    display: flex;
-    justify-content: center;
+    color: white;
 }
 
 .html-css > p {
