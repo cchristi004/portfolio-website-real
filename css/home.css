@@ -14,10 +14,9 @@ body {
 
 .nav > ul {
     list-style: none;  
-    
 }
 
-.nav > ul li {
+.nav > ul > li {
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
@@ -25,7 +24,7 @@ body {
 
 /* Nav Links Styles */
 
-.nav > ul a {
+.nav > ul > li > a {
     text-decoration: none;
     border: 4px solid #7124ee;
     border-radius: 50em;
@@ -40,7 +39,7 @@ body {
 
 /* Nav Hover Conditional */
 
-.nav > ul a:hover, .nav .active {
+.nav > ul > li > a:hover, .nav .active {
     background-color: #7124ee;
     color: tan;
     box-shadow: 9px 10px rgba(0,0,0,0.6);
@@ -52,7 +51,7 @@ body {
 .about-me {
     background-color: black;
     border: 4px solid #7124ee;
-    grid-area: featured-main;
+    grid-area: about-me;
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -107,6 +106,7 @@ body {
     justify-content: center;
     margin-top: 25px;
     margin-bottom: 25px;
+    grid-area: profile-pic;
 }
 
 .profile-pic > img {
@@ -121,6 +121,7 @@ body {
     margin: 25px;
     background-color: black;
     border: 4px solid #7124ee;
+    grid-area: drawings;
 }
 
 .drawings > .oh-gee-art-2 {
@@ -159,38 +160,37 @@ body {
 
 /* Media Query */
 
-@media screen and (max-width: 480px){
+@media screen and (min-width: 666px){
+
+    /* Site Wrap Grid Styles */
+
     .site-wrap {
-        grid-template-rows:
-            min-content
-            152px
-            min-content
-            min-content
-            128px
-        ;
+        display: grid;
+        grid-template-rows: 4;
+        grid-template-columns: 3;
         grid-template-areas:
-            "header header header header header header"
-            "featured-header featured-header featured-header featured-header featured-header featured-header"
-            "featured-main featured-main featured-main featured-main featured-main featured-main"
-            "content content content content content content"
-            "footer footer footer footer footer footer"
-        ;
+        'nav nav nav'
+        'about-me profile-pic profile-pic'
+        'drawings drawings drawings'
+        'footer footer footer';
     }
-    .featured-profile {
-        display: none;
-    }
-    .header > .nav {
-        list-style: none;  
-        padding: 0;
+
+    /* Nav Styles */
+
+    .nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
-    .header > .nav a {
-        margin: 0.5em;
+
+    .nav > img {
+        content: url(../images/website-logo-desktop.png);
     }
-    .featured-header {
-        text-align: center;
-        line-height: 1em;
-        font-size: 60pt;
+
+    /* Drawing Styles */
+
+    .drawings {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 }

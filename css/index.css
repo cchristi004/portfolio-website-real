@@ -12,7 +12,7 @@ body {
 
 .site-wrap {
     display: grid;
-    grid-template-rows: 6;
+    grid-template-rows: 7;
     grid-template-columns: 1;
     grid-template-areas:
         'logo'
@@ -121,12 +121,13 @@ body {
 @media only screen and (min-width: 666px) {
     .site-wrap {
         display: grid;
-        grid-template-rows: 4;
+        grid-template-rows: 5;
         grid-template-columns: 3;
         grid-template-areas: 
         'alfred logo chinese'
         '. logo .'
         'reflection btn create'
-        'reflection . create';
+        'reflection . create'
+        'footer footer footer';
     }
 }
