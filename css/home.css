@@ -178,8 +178,7 @@ body {
     /* Nav Styles */
 
     .nav {
-        display: flex;
-        flex-direction: row;
+        display: grid;
     }
 
     .nav > img {
