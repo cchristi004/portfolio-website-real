@@ -54,6 +54,7 @@ body {
     background-color: black;
     border: 4px solid #7124ee;
     padding-bottom: 25px;
+    grid-area: oh-gee-art;
 }
 
 .oh-gee-art > h1 {
@@ -74,6 +75,7 @@ body {
     background-color: black;
     border: 4px solid #7124ee;
     padding-bottom: 25px;
+    grid-area: landing-page;
 }
 
 .iteams-usa-landing-page > h1 {
@@ -87,6 +89,10 @@ body {
     justify-content: center;
 }
 
+.extra-landing-page {
+    display: none;
+}
+
 /* CodePen Website Styles */
 
 .codepen-website {
@@ -94,6 +100,7 @@ body {
     background-color: black;
     border: 4px solid #7124ee;
     padding-bottom: 25px;
+    grid-area: codepen-website;
 }
 
 .codepen-website > h1{
@@ -124,42 +131,52 @@ body {
 
 /* Media Query */
 
-@media screen and (max-width: 480px){
+@media screen and (min-width: 666px){
+
+    /* Site Wrap Grid Styles */
+
     .site-wrap {
-        grid-template-rows:
-            min-content
-            152px
-            min-content
-            min-content
-            128px
-        ;
+        display: grid;
+        grid-template-rows: 4;
+        grid-template-columns: 4;
         grid-template-areas:
-            "header header header header header header"
-            "featured-header featured-header featured-header featured-header featured-header featured-header"
-            "featured-main featured-main featured-main featured-main featured-main featured-main"
-            "content content content content content content"
-            "footer footer footer footer footer footer"
+            'nav nav nav nav'
+            '. oh-gee-art oh-gee-art .'
+            '. landing-page codepen-website .'
+            'footer footer footer footer';
         ;
     }
 
-    .featured-profile {
-        display: none;
+    /* Nav Styles */
+
+    .nav {
+        background-color: black;
+        border-bottom: 4px solid #7124ee;
+        margin-bottom: 25px;
     }
 
-    .header > .nav {
-        list-style: none;  
-        padding: 0;
+    .nav > ul {
         display: flex;
-        flex-direction: column;
     }
 
-    .header > .nav a {
-        margin: 0.5em;
+    .logo {
+        content: url(../images/website-logo-desktop.png);
     }
 
-    .featured-header {
-        text-align: center;
-        line-height: 1em;
-        font-size: 60pt;
+    /* Banner Styles */
+
+    .banner {
+        content: url(../images/oh-gee-art-banner-desktop.png);
+        margin-bottom: 25px;
+    }
+
+    /* Iteams Landing Page Styles */
+
+    .iteams-usa-landing-page > a {
+        margin-bottom: 150px;
+    }
+
+    .extra-landing-page {
+        display: inline;
     }
 }

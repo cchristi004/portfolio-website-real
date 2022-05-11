@@ -13,7 +13,7 @@ body {
 }
 
 .nav > ul {
-    list-style: none;  
+    list-style: none; 
 }
 
 .nav > ul > li {
@@ -59,15 +59,15 @@ body {
 .about-me > h1 {
     font-weight: bold;
     text-align: center;
-    color: tan;
+    color: white;
 }
 
 .about-me > p {
     padding: 10px;
-    padding-left: 15px;
     color: tan;
     font-size: 23px;
     text-align: center;
+    line-height: 40px;
 }
 
 .about-me > .btn-position {
@@ -116,8 +116,8 @@ body {
 /* Drawing Styles */
 
 .drawings {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 75px;
+    padding-bottom: 75px;
     margin: 25px;
     background-color: black;
     border: 4px solid #7124ee;
@@ -130,7 +130,7 @@ body {
     margin-bottom: 25px;
 }
 
-.drawings > .smokin {
+.drawings > .open-yo-mind {
     display: flex;
     justify-content: center;
     margin-bottom: 25px;
@@ -142,9 +142,10 @@ body {
     margin-bottom: 25px;
 }
 
-.drawings > .open-yo-mind {
+.drawings > .silence {
     display: flex;
     justify-content: center;
+    margin-bottom: 25px;
 }
 
 /* Footer Styles */
@@ -167,22 +168,45 @@ body {
     .site-wrap {
         display: grid;
         grid-template-rows: 4;
-        grid-template-columns: 3;
+        grid-template-columns: 4;
         grid-template-areas:
-        'nav nav nav'
-        'about-me profile-pic profile-pic'
-        'drawings drawings drawings'
-        'footer footer footer';
+        'nav nav nav nav'
+        '. profile-pic about-me .'
+        ' . drawings drawings . '
+        'footer footer footer footer';
     }
 
     /* Nav Styles */
 
     .nav {
-        display: grid;
+        background-color: black;
+        border-bottom: 4px solid #7124ee;
+        margin-bottom: 25px;
     }
 
-    .nav > img {
+    .nav > ul {
+        display: flex;
+    }
+
+    .logo {
         content: url(../images/website-logo-desktop.png);
+    }
+
+    /* Profile Pic Styles */
+
+    .profile-pic {
+        margin-left: 25px;
+    }
+
+    .profile-pic > img {
+        content: url(../images/profile-pic-desktop.png);
+    }
+
+    /* About Me Styles */
+
+    .about-me {
+        margin-right: 25px;
+        
     }
 
     /* Drawing Styles */
@@ -191,5 +215,21 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    .drawings > .oh-gee-art-2 {
+        margin-bottom: 0px;
+    }
+
+    .drawings > .open-yo-mind {
+        margin-bottom: 0px;
+    }
+
+    .drawings > .expand {
+        margin-bottom: 0px;
+    }
+
+    .drawings > .silence {
+        margin-bottom: 0px;
     }
 }

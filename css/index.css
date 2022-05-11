@@ -30,6 +30,7 @@ body {
     grid-area: btn;
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .btn-wrapper > .btn {
@@ -55,6 +56,7 @@ body {
     grid-area: logo;
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .logo-wrapper > img {
@@ -124,10 +126,10 @@ body {
         grid-template-rows: 5;
         grid-template-columns: 3;
         grid-template-areas: 
-        'alfred logo chinese'
-        '. logo .'
-        'reflection btn create'
-        'reflection . create'
-        'footer footer footer';
+            'alfred logo chinese'
+            '. logo .'
+            'reflection btn create'
+            'reflection . create'
+            'footer footer footer';
     }
 }
