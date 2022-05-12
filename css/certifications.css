@@ -54,6 +54,7 @@ body {
     background-color: black;
     border: 4px solid #7124ee;
     padding-top: 25px;
+    grid-area: illustrator;
 }
 
 .illustrator > .illustrator-logo {
@@ -79,6 +80,7 @@ body {
     background-color: black;
     border: 4px solid #7124ee;
     padding-top: 25px;
+    grid-area: photoshop;
 }
 
 .photoshop > .photoshop-logo {
@@ -104,6 +106,7 @@ body {
     background-color: black;
     border: 4px solid #7124ee;
     padding-top: 25px;
+    grid-area: html-css;
 }
 
 .html-css > .html-css-logos {
@@ -139,38 +142,32 @@ body {
 
 /* Media Query */
 
-@media screen and (max-width: 480px){
+@media screen and (min-width: 666px){
     .site-wrap {
-        grid-template-rows:
-            min-content
-            152px
-            min-content
-            min-content
-            128px
-        ;
+        display: grid;
+        grid-template-rows: 4;
+        grid-template-columns: 4;
         grid-template-areas:
-            "header header header header header header"
-            "featured-header featured-header featured-header featured-header featured-header featured-header"
-            "featured-main featured-main featured-main featured-main featured-main featured-main"
-            "content content content content content content"
-            "footer footer footer footer footer footer"
+            'nav nav nav nav'
+            '. photoshop photoshop .'
+            '. illustrator html-css .'
+            'footer footer footer footer';
         ;
     }
-    .featured-profile {
-        display: none;
+    
+    /* Nav Styles */
+
+    .nav {
+        background-color: black;
+        border-bottom: 4px solid #7124ee;
+        margin-bottom: 25px;
     }
-    .header > .nav {
-        list-style: none;  
-        padding: 0;
+
+    .nav > ul {
         display: flex;
-        flex-direction: column;
     }
-    .header > .nav a {
-        margin: 0.5em;
-    }
-    .featured-header {
-        text-align: center;
-        line-height: 1em;
-        font-size: 60pt;
+
+    .logo {
+        content: url(../images/website-logo-desktop.png);
     }
 }

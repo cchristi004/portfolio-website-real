@@ -47,50 +47,37 @@ body {
     transition: all 0.33s ease-in;
 }
 
-/* Content Header Styles */
+/* About Me */
 
-.content-h {
+.about-me {
     margin: 20px 50px;
     display: flex;
     justify-content: center;
     background-color: black;
     border: 4px solid #7124ee;
+    grid-area: about-me;
+    line-height: 45px;
+    display: grid;
 }
 
-.content-h > h2 {
+.about-me > h1 {
     color: white;
     text-align: center;
 }
 
-/* Content Paragraph Styles */
-
-.content-p {
-    color: tan;
-    text-align: center;
-}
-
-.content-p {
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: flex-start;
-    background-color: black;
-    border: 4px solid #7124ee;
-    height: 300px;
-}
-
-.content-p > ul {
+.about-me > ul {
     font-size: 20px;
+    color: tan;
 }
 
-.content-p > ul > li {
+.about-me > ul > li {
     margin-bottom: 20px;
+    text-decoration: none;
 }
 
-/* Images Styles */
+/* Profile Pics Styles */
 
-.images {
+.pro-dress {
     display: flex;
     justify-content: center;
     background-color: black;
@@ -100,6 +87,20 @@ body {
     margin-bottom: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
+    grid-area: pro-dress
+}
+
+.profile-pic {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border: 4px solid #7124ee;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-area: profile-pic;
 }
 
 /* Footer Styles */
@@ -116,38 +117,31 @@ body {
 
 /* Media Query */
 
-@media screen and (max-width: 480px){
+@media screen and (min-width: 666px){
     .site-wrap {
-        grid-template-rows:
-            min-content
-            152px
-            min-content
-            min-content
-            128px
-        ;
+        display: grid;
+        grid-template-rows: 4;
+        grid-template-columns: 4;
         grid-template-areas:
-            "header header header header header header"
-            "featured-header featured-header featured-header featured-header featured-header featured-header"
-            "featured-main featured-main featured-main featured-main featured-main featured-main"
-            "content content content content content content"
-            "footer footer footer footer footer footer"
+            'nav nav nav nav'
+            '. about-me pro-dress .'
+            '. about-me profile-pic .'
+            'footer footer footer footer';
         ;
     }
-    .featured-profile {
-        display: none;
+    /* Nav Styles */
+
+    .nav {
+        background-color: black;
+        border-bottom: 4px solid #7124ee;
+        margin-bottom: 25px;
     }
-    .header > .nav {
-        list-style: none;  
-        padding: 0;
+
+    .nav > ul {
         display: flex;
-        flex-direction: column;
     }
-    .header > .nav a {
-        margin: 0.5em;
-    }
-    .featured-header {
-        text-align: center;
-        line-height: 1em;
-        font-size: 60pt;
+
+    .logo {
+        content: url(../images/website-logo-desktop.png);
     }
 }
