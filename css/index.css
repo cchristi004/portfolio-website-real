@@ -106,6 +106,12 @@ body {
     margin-bottom: 25px;
 }
 
+/* Breaks Styles */
+
+.breaks {
+    display: none;
+}
+
 /* Footer */
 
 .footer {
@@ -116,6 +122,23 @@ body {
     color: white;
     border-top: 4px solid #7124ee;
     padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 1;
+    grid-template-areas: 
+    'name email number';
+}
+
+.footer > .name {
+    grid-area: name;
+}
+
+.footer > .email {
+    grid-area: email;
+}
+
+.footer > .number {
+    grid-area: number;
 }
 
 /* Media Query */
@@ -123,13 +146,19 @@ body {
 @media only screen and (min-width: 666px) {
     .site-wrap {
         display: grid;
-        grid-template-rows: 5;
+        grid-template-rows: 6;
         grid-template-columns: 3;
         grid-template-areas: 
             'alfred logo chinese'
             '. logo .'
             'reflection btn create'
             'reflection . create'
-            'footer footer footer';
+            'footer footer footer'
+    }
+
+    /* Breaks Style */
+
+    .breaks {
+        display: inline;
     }
 }

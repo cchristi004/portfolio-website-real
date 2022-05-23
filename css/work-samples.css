@@ -68,6 +68,13 @@ body {
     justify-content: center;
 }
 
+/* DevCamp Fries Website Styles */
+
+.devcamp-fries-website {
+    grid-area: devcamp-fries;
+    text-align: center;
+}
+
 /* Iteams USA Landing Page Styles */
 
 .iteams-usa-landing-page {
@@ -123,6 +130,23 @@ body {
     padding-top: 2em;
     color: white;
     border-top: 4px solid #7124ee;
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 1;
+    grid-template-areas: 
+    'name email number';
+}
+
+.footer > .name {
+    grid-area: name;
+}
+
+.footer > .email {
+    grid-area: email;
+}
+
+.footer > .number {
+    grid-area: number;
 }
 
 .footer {
@@ -142,6 +166,7 @@ body {
         grid-template-areas:
             'nav nav nav nav'
             '. oh-gee-art oh-gee-art .'
+            '. devcamp-fries devcamp-fries .'
             '. landing-page codepen-website .'
             'footer footer footer footer';
         ;

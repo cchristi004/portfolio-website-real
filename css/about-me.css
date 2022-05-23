@@ -113,6 +113,30 @@ body {
     color: white;
     border-top: 4px solid #7124ee;
     padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+    grid-template-areas: 
+    'name . number'
+    '. . email'
+    '. . linked-in';
+    margin-top: 25px;
+}
+
+.footer > .name {
+    grid-area: name;
+}
+
+.footer > .number {
+    grid-area: number;
+}
+
+.footer > .email {
+    grid-area: email;
+}
+
+.footer > .linked-in {
+    grid-area: linked-in;
 }
 
 /* Media Query */
