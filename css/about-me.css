@@ -125,6 +125,7 @@ body {
 
 .footer > .name {
     grid-area: name;
+    font-size: 20px;
 }
 
 .footer > .number {
@@ -137,6 +138,12 @@ body {
 
 .footer > .linked-in {
     grid-area: linked-in;
+    margin-top: 15px;
+}
+
+.footer > .linked-in > a:hover {
+    color: tan;
+    transition: all 0.3s;
 }
 
 /* Media Query */

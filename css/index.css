@@ -124,13 +124,16 @@ body {
     padding-bottom: 10px;
     display: grid;
     grid-template-columns: 3;
-    grid-template-rows: 1;
+    grid-template-rows: 3;
     grid-template-areas: 
-    'name email number';
+    'name . number'
+    '. . email'
+    '. . linked-in';
 }
 
 .footer > .name {
     grid-area: name;
+    font-size: 20px;
 }
 
 .footer > .email {
@@ -139,6 +142,16 @@ body {
 
 .footer > .number {
     grid-area: number;
+}
+
+.footer > .linked-in {
+    grid-area: linked-in;
+    margin-top: 15px;
+}
+
+.footer > .linked-in > a:hover {
+    color: tan;
+    transition: all 0.3s;
 }
 
 /* Media Query */

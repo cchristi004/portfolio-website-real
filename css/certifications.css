@@ -132,17 +132,21 @@ body {
     text-align: center;
     grid-area: footer;
     padding-top: 2em;
+    padding-bottom: 1em;
     color: white;
     border-top: 4px solid #7124ee;
     display: grid;
     grid-template-columns: 3;
     grid-template-rows: 1;
     grid-template-areas: 
-    'name email number';
+    'name . number'
+    '. . email'
+    '. . linked-in';
 }
 
 .footer > .name {
     grid-area: name;
+    font-size: 20px;
 }
 
 .footer > .email {
@@ -153,8 +157,14 @@ body {
     grid-area: number;
 }
 
-.footer {
-    padding-bottom: 10px;
+.footer > .linked-in {
+    grid-area: linked-in;
+    margin-top: 15px;
+}
+
+.footer > .linked-in > a:hover {
+    color: tan;
+    transition: all 0.3s;
 }
 
 /* Media Query */
